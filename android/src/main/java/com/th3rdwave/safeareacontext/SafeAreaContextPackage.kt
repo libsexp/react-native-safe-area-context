@@ -32,7 +32,7 @@ class SafeAreaContextPackage : TurboReactPackage() {
               /** TODO remove the parameter once support for RN < 0.73 is dropped */
               reactModule.hasConstants,
               reactModule.isCxxModule,
-              BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+              false)
     }
     return ReactModuleInfoProvider { reactModuleInfoMap }
   }
